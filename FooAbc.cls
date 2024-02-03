@@ -16,7 +16,11 @@ public class FooAbc1 {
             System.debug('1'); /*expect PMD Comment AvoidDebugStatements */
             List<Account> listName = new List<Account>([SELECT Id, Name FROM Account]) ; /*expect PMD Comment UnusedLocalVariable, OperationWithLimitsInLoop, AvoidSoqlInLoops */
 if ( !(a == 2)) { ...}  // Noncompliant
-Boolean b = !(i < 10);  // Noncompliant        
+Boolean b = !(i < 10);  // Noncompliant     
+
+
+if ( !(a == 2)) { ...}  // Noncompliant
+Boolean b = !(i < 10);  // Noncompliant 
 }
     }
 
