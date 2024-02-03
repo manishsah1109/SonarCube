@@ -1,7 +1,7 @@
 //12232
 //265605 
 //265605v1
-public class FooAbc {
+public class FooAbc1 {
 	private Integer numberOfSlices = 5;
     private Integer someint = 1;
     
