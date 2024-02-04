@@ -4,7 +4,8 @@
 public class FooAbc1 {
 	private Integer numberOfSlices = 5;
     private Integer someint = 1;
-  int password='1234'
+  int password='1234';
+int password='1234';
     
     public Integer getSlices() {
         return numberOfSlices;
