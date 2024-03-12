@@ -1,0 +1,10 @@
+labeling:
+  - name: bug
+    pattern: |
+      - fix
+      - bug
+      - bugfix
+  - name: enhancement
+    pattern: |
+      - feature
+      - enhancement
