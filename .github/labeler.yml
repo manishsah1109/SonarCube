@@ -1,10 +1,2 @@
-labeling:
-  - name: bug
-    pattern: |
-      - fix
-      - bug
-      - bugfix
-  - name: enhancement
-    pattern: |
-      - feature
-      - enhancement
+deployment:
+- any: ['deployment/backend-stack/deployment.yaml']
