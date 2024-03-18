@@ -1,16 +1,13 @@
-name: Labeler
-#on: [pull_request]
-
+name: Build
+on:
+  pull_request:
+    branches:
+      - dev
+      - main
 jobs:
-  label:
-  
+  devcondition:
+    name: devcheck
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-
+    if: github.event.pull_request.base.ref == 'dev'
     steps:
-    - uses: actions/labeler@v2
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        sync-labels: true
+      - name: dev condition check pass
