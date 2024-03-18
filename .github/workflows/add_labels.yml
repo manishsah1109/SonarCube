@@ -1,15 +1,13 @@
-name: Your Workflow Name
-
+name: Build
 on:
   pull_request:
     branches:
-      - dev # Replace 'target-branch-name' with the name of the branch you're targeting
+      - dev
       - main
-
 jobs:
-  your-job-name:
+  sonarcloud:
+    name: SonarCloud
     runs-on: ubuntu-latest
     if: github.event.pull_request.base.ref == 'dev'
     steps:
-      - name: dev branh trigger condition
-        # Your steps here
+      - name: dev condition check
