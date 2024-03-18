@@ -5,9 +5,9 @@ on:
       - dev
       - main
 jobs:
-  sonarcloud:
-    name: SonarCloud
+  devcondition:
+    name: devcheck
     runs-on: ubuntu-latest
     if: github.event.pull_request.base.ref == 'dev'
     steps:
-      - name: dev condition check
+      - name: dev condition check pass
